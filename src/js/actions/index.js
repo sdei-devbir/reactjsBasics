@@ -9,13 +9,12 @@ export function addArticleConsole(payload) {
 */
 export const addArticle = (payload) => {
 
-    console.log('addArticle')
+    
     return { type: ADD_ARTICLE, payload };
 }
 
 export const addArticleConsole = () => {
 
-    console.log('addArticleConsole')
     return { type: 'test' };
 } 
 
@@ -43,6 +42,5 @@ export const getData = () => {
 
 export const getData = () => {
 
-    console.log('action API call')
     return { type: "DATA_REQUESTED" }; // only type is required
 } 

@@ -35,7 +35,7 @@ function rootReducer(state = initialState, action) {
     });
   }
   if(action.type === 'FOUND_BAD_WORD'){
-      console.log('wait what?')
+
   }
   if (action.type === "DATA_LOADED") {
     return Object.assign({}, state, {

@@ -1,11 +1,10 @@
 import { takeEvery, call, put } from "redux-saga/effects";
 export default function* watcherSaga() {
-  console.log('watcher watching')
+
   yield takeEvery("DATA_REQUESTED", workerSaga);
 }
 function* workerSaga() {
 
-  console.log('watcher called workerSagaaaaaaa')
   try {
     const payload = yield call(getData);
     yield put({ type: "DATA_LOADED", payload });
